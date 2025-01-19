@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <title>Responsive Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+        }
+        header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        header nav {
+            display: flex;
+            gap: 30px;
+            padding-top: 15px;
+            padding-right: 10px;
+        }
+        header nav a {
+        color: black; 
+        text-decoration: none;
+        font-family: gilroy;
+        font-size: larger;
+        }
+        header .shop-icon {
+            font-size: 1.2em;
+            margin-left: 10px;
+            
+        }
+        footer {
+            padding: 10px;
+            text-align: center;
+            border-top: 1px solid black;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            height: calc(100vh - 100px);
+        }
+        .upper {
+            flex: 6;
+            display: flex;
+            padding-right: 20px;
+            padding-left: 60px;
+        }
+        .lower {
+            flex: 4;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 40%;
+        }
+        .lower img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+        .left {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-right: 20px;
+        }
+        .left .heading {
+            font-family: gilroy;
+            font-size: 4.8em;
+            margin-bottom: 20px;
+        }
+        .left .text {
+            font-family: gilroy;
+            font-size: 1.3em;
+        }
+        .right {
+            flex: 1;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .right a {
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: black;
+            border-top: 0.14em solid black;
+            padding-top: 10px;
+            width: 60%;
+            font-family: gilroy;
+            font-size: large;
+            
+        }
+        @media (max-width: 768px) {
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+            footer {
+                order: -1;
+            }
+            main {
+                height: auto;
+            }
+            .upper {
+                flex-direction: column;
+                padding: 10px;
+            }
+            .left {
+                flex: unset;
+                padding: 0 0 10px 0;
+            }
+            .right {
+                flex: unset;
+                padding: 0;
+                border: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#cars"><b>Cars</b></a>
+            <a href="#news"><b>News</b></a>
+            <a href="#about"><b>About</b></a>
+            <span class="shop-icon"><i class="ri-shopping-bag-line"></i></span>
+        </nav>
+    </header>
+    <main>
+        <div class="upper">
+            <div class="left">
+                <div class="heading">Lightly padded, <br>quality jacket in <br>recycled polyster</div>
+                <div class="text">Exclusive brands aspire for the label haute <br>couture, but the term is technically limited to <br>members of the Chambre Syndicale de la Haute
+                    </div>
+            </div>
+            <div class="right">
+                <div>
+                    <a href="#item1">Add to Cart</a>
+                    <a href="#item2">Product Details</a>
+                    <a href="#item3">Shipping</a>
+                </div>
+            </div>
+        </div>
+        <div class="lower">
+            <img src="placeholder.jpg" alt="Full width image">
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
